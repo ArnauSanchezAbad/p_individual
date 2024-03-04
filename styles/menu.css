@@ -5,12 +5,48 @@
 }
 
 button.center{
-	width: 6rem;
-	height: 3rem;
-	margin-top: 1rem;
+	background-color: burlywood;
+	width: 15rem;
+	height: 5rem;
+	margin-top: 1.5rem;
 }
 
 #title{
-	color:red;
+	color:rgb(238, 236, 99);
+	font-size: 7rem;
+	-webkit-text-stroke: 0.3rem black;
 	text-align: center;
+	font-family: Arial;
+}
+
+#play{
+	color:black;
+	font-size: 2rem;
+	text-align: center;
+	font-family: Arial;
+}
+
+#options{
+	color:black;
+	font-size: 2rem;
+	text-align: center;
+	font-family: Arial;
+}
+
+#saves{
+	color:black;
+	font-size: 2rem;
+	text-align: center;
+	font-family: Arial;
+}
+
+#exit{
+	color:black;
+	font-size: 2rem;
+	text-align: center;
+	font-family: Arial;
+}
+
+body {
+	background-color: rgba(141, 10, 82, 0.651);
 }

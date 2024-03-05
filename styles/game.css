@@ -1,16 +1,23 @@
-#title, .center{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-button.center{
-	background-color: burlywood;
-	width: 15rem;
-	height: 5rem;
-	margin-top: 1.5rem;
+h1{
+	color:rgb(238, 236, 99);
+	font-size: 4rem;
+	-webkit-text-stroke: 0.2rem black;
+	font-family: Arial;
 }
 
 body {
 	background-color: rgba(141, 10, 82, 0.651);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+#game{
+	width: 30%;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	background-color: rgba(99, 26, 94, 0.51);
 }

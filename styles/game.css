@@ -15,9 +15,13 @@ body {
 }
 
 #game{
-	width: 30%;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: center;
 	padding: 1rem;
 	background-color: rgba(99, 26, 94, 0.51);
+}
+
+#game > * {
+    margin: 0.5rem;
 }

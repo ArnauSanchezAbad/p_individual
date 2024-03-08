@@ -1,3 +1,4 @@
+import options from './options.js';
 export var game = function(){
     const back = '../resources/back.png';
     const resources = ['../resources/cb.png', '../resources/co.png', '../resources/sb.png','../resources/so.png', '../resources/tb.png','../resources/to.png'];
@@ -19,8 +20,19 @@ export var game = function(){
     };
 
     var lastCard;
-    var pairs = 2;
+    var pairs = options.obtPairs;
+    var dif = options.obtDifficulty;
     var points = 100;
+    var error = 25;
+    var iniShowtime = 2000;
+    if(dif === 'easy'){
+        error = 20;
+        iniShowtime = 3000;
+    }
+    else if(dif === 'hard'){
+        error = 50;
+        iniShowtime = 1000;
+    }
 
     return {
         init: function (call){
@@ -44,7 +56,7 @@ export var game = function(){
                 }
                 else{
                     [card, lastCard].forEach(c=>c.goBack());
-                    points-=25;
+                    points-=error;
                     if (points <= 0){
                         alert ("Has perdut");
                         window.location.replace("../");

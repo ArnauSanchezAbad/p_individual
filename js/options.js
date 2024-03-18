@@ -22,10 +22,7 @@ var options = function(){
             options.difficulty = default_options.difficulty;
             pairs.val(options.pairs);
             difficulty.val(options.difficulty);
-        },
-       obtDifficulty: options.difficulty,
-
-       obtPairs: options.pairs
+        }
     }
 }();
 
@@ -37,5 +34,3 @@ $('#apply').on('click',function(){
     options.applyChanges();
     location.assign("../");
 });
-
-export default options;
